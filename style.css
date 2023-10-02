@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.body-padding{
+    padding: 10px;
+}
+.compteur{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    background-color: rgba(0, 128, 49, 0.677);
+    border: 1px rgba(0, 128, 49, 0.677);
+    border-radius: 10px;
+    color: white;
+}
+.compteur span{
+    padding: 5px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.image{
+    width: 200px;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .footer-page1{
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+ }
+.image_footer{
+    display: flex;
+    margin-bottom: 10px;
+}
+ .logo_footer{
+    width: 300px;
+    margin: 0 30px;
+ }
+.bar_footer{
+    width:100px;
+    height: 5px;
+    background-color: darkslategrey;
+    margin: 0 auto;
+    border: 1px darkslategrey;
+    border-radius: 5px;
+    display: flex;
+}
+/* premiere page */
+
+.menu{
+    height: 150px;
+    padding: 10px;
+    background-color: orange;
+}
+h2{
+    text-align: center;
+    color: white;
+   position: relative;
+   top: 50px;
+   
+   
+}
+.d-flex{
+    display: flex;
+    
+}
+.hauteur-page{
+ height: 56vh;  
+ margin-top: 50px;
+}
+.image_ticket{
+    width: 200px;
+    height: auto;
+    border: none;
+    border-radius: 10px; 
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.hauteur-page span{
+    width: 200px;
+    display: block;
+    margin: 0 auto; 
+    text-align: center;
+    margin-top: 10px;
+         
+}
+ul{
+    display: flex;
+  justify-content:space-between ;
+  
+}
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+   border-top: 1px solid gray;
+   padding: 10px;
+   position: fixed;
+   bottom: 0;
+} 
+.icones{
+    width: 50px;
+}
+.image-masquee{
+    display: none;
+    background-image: url("images/Titres_tranport.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 120px;
+    border: none;
+    border-radius: 10px; 
+    margin: 0 auto;
+    position: relative;
+}   
+.image-masquee::before{
+    background-color: rgba(0, 0, 0, 0.66);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 10px; 
+    position: absolute;
+    }
+.text{
+    width: 200px;
+    position: absolute;
+  top: 50%;
+  display: none;
+  justify-content: center;
+  color:white
+}
+.btn-secondery{
+    display: none;
+width: 80%;
+color: white;
+background-color: dimgray;
+border:none;
+padding: 10px;
+border-radius: 10px;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+margin-top: 200px;
+}
+.check_green_icon{
+display: none;
+ width: 20px;
+ margin-left: 170px;
+ margin-top: 10px;   
+}
+.image_sablier{
+    width: 20px;
+    margin-left: 3px;
+}
+.aligner{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+/* compte à rebours */
+.timer{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.box_jour, .box_heure, .box_minute, .box_seconde { 
+    padding: 10px; 
+}
+#jour, #heure, #minute, #seconde { 
+    background:black; 
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 3rem; 
+    font-weight: bold; 
+}
+.container-image{
+    position:relative;
+     height:200px;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 10px;
+}
+.image_ticket1{
+    width: 200px;
+    position:absolute;
+    z-index:1;
+    border: none;
+    border-radius: 10px; 
+}
+#countdown{
+    width: 200px;
+    height: 55px;
+    background-color: forestgreen;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    position:absolute;
+    top: 50%;
+    z-index:2
+}
+.bg-grey{
+    height: 30vh; 
+}
+.affiche-btn{
+    height: 40vh;
+}
+.btn-second{
+    display: block;
+    margin: 0 auto;
+    padding: 10px; 
+    background-color: dimgray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    position : relative;
+    top : 70%;
+}
+.achat{
+    height: 56vh;
+}
+.icone{
+    width: 30px;
+    vertical-align: middle;
+}
+table{
+    width: auto;
+    border-bottom: 1px solid #ccc;
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+}
+table td{
+margin-right: 100px;
+
+}
+.displayF{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    justify-content: space-between; 
+    margin-right: 10px;  
+}
+.flexer-tous{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between; 
+
+}
+.flexer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.marge-droite{
+    margin-left: 48px;
+}
+.moin, .plus{
+    width:20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+ background-color:grey;  
+ color: white;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moin{
+margin-right: 5px;
+}
+.plus{
+    margin-left: 5px;
+    }
+tr{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+#aligner-quantite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.totalA{
+   display: none; 
+   height: 100px;
+   width: 360px;
+   background-color: white;
+ position: absolute;
+bottom: 100px;
+padding: 10px;
+}
+.btn-second0{
+    display: block;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color:#ccc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 20px;
+}
+.btn-second1{
+    display: block;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: dimgray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 20px;
+}
+.btn-second2{
+    display: none;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: dimgray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 20px;
+}
+.paiement{
+    padding: 20px;
+    display: none;
+}
+.checker{
+    display: flex;
+    margin-top: 50px;
+}
+.checker p{
+    margin-left: 5px;
+}
+form{
+    margin-top: 50px;
+width: 300px;
+height: 200px;    
+}
+label {
+    margin-top:10px;
+}
+.inline{
+    display: flex;
+}
+#numerCarte{
+    margin-bottom: 5px;
+}
+#expiration{
+    margin-right: 5px;
+}
+#crypto{
+    margin-bottom:10px; ;
+}
+.menu1{
+    height: 150px;
+    padding: 10px;
+    background-color: orange;
+}
+.menu2{
+    display:none;
+    height: 150px;
+    padding: 10px;
+    background-color: orange;
+}
+.footer-paiement{
+    display: none;
+    width: 100%;
+    height: 100px;
+   border-top: 1px solid gray;
+   padding: 10px;
+   position: fixed;
+   bottom: 0;
+} 
+.paiement-carte{
+    display: none;
+ padding: 10px;
+}
+.validation-paiement{
+padding: 10px;
+background-color: rgba(0, 0, 255, 0.527);
+border: none;
+border-radius: 10px;
+margin-left: 30px;
+color: white;
+}
+#validations{
+    padding: 10px;
+    background-color:whitesmoke;
+    height: 100px;
+  
+}
+#validations h2{
+  text-align: center; 
+  color: black;
+}
